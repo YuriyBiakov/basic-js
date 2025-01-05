@@ -16,7 +16,7 @@ function getSumOfDigits(n) {
   let sum = 0;
   const str = String(n);
   const arr = Array.from(str);
-  arr.forEach(el => sum += el);
+  arr.forEach(el => sum += Number(el));
   while (sum > 9) {
     sum = getSumOfDigits(sum); 
   }
